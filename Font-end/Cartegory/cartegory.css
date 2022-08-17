@@ -1,0 +1,154 @@
+/**********************Cartegory************/
+
+.cartegory {
+    padding: 15px 5px 0 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.cartegory-top {
+    padding: 10px 10px;
+}
+
+.cartegory-top>li {
+    padding: 0 20px;
+}
+
+.cartegory-top p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.cartegory-left {
+    width: 20%;
+}
+
+.cartegory-right {
+    width: 80%;
+}
+
+.cartegory-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cartegory-right-top-item {
+    flex: 1;
+    padding: 0 12px;
+}
+
+.cartegory-right-top-item button {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 254, 255);
+    border: 1px solid snow;
+    cursor: pointer;
+}
+
+.cartegory-right-top-item select {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 254, 255);
+    border: 1px solid snow;
+    cursor: pointer;
+}
+
+.cartegory-left ul li {
+    padding: 12px 0;
+}
+
+.cartegory-left ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cartegory-left ul li ul li {
+    padding-left: 10px;
+}
+
+.cartegory-left-li ul {
+    display: none;
+}
+
+.cartegory-left-li.block ul {
+    display: block;
+}
+
+.product {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.product li {
+    flex-basis: 25%;
+    padding: 0 2px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.product li:hover .buy-now {
+    bottom: 0px;
+}
+
+.product li img {
+    max-width: 280px;
+    max-height: 360px;
+}
+
+.product-thumb {
+    display: block;
+}
+
+.product-thumb img {
+    display: block;
+}
+
+.product-top a.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgb(175, 175, 228);
+    color: white;
+    padding: 15px 0;
+    margin: 0 15px 0 0;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    transform: 0.3s ease-in-out;
+    opacity: 0.85;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info a {
+    display: block;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.cartegory-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}

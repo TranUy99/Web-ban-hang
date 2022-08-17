@@ -1,0 +1,196 @@
+/*------------------- Header ---------------------- */
+
+* {
+    margin: 0;
+    padding: -1;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    height: 70px;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    flex: 1;
+    align-items: center;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.menu li {
+    /* margin-right: 15px;
+    margin-left: 50px;
+    margin-top: 50px; */
+    padding: 50px 15px 0 50px;
+    position: relative;
+}
+
+.menu li a {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    line-height: 80%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu li:hover .sub-menu {
+    visibility: visible;
+    top: 65px;
+}
+
+.sub-menu {
+    position: absolute;
+    font-size: 5px;
+    width: 140px;
+    height: 124px;
+    border: 1px solid #ccc;
+    padding: 5px 0 5px 0px;
+    visibility: hidden;
+    top: 60px;
+    transition: 0.3s;
+    font-weight: 300;
+    z-index: 1;
+    background: rgb(251, 249, 249);
+}
+
+.sub-menu li a {
+    font-weight: lighter;
+    font-size: 12px !important;
+    line-height: 0.5;
+    margin: -20px -10px -24px -25px;
+}
+
+
+/* <!------------------other ------------> */
+
+.others {
+    flex: 1;
+    display: flex;
+}
+
+.others li {
+    padding: 0px 12px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+.others li:first-child {
+    position: relative;
+}
+
+.others li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #333
+}
+
+.others li:first-child i {
+    position: absolute;
+    right: 1px;
+}
+
+
+/* <!------------------SLider ------------> */
+
+#Slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(119, 206, 127);
+    overflow: hidden;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.2s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    top: 108px;
+    left: 14px;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: brown;
+}
+
+
+/***************************App-container********/
+
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.app-google {
+    margin: 50px;
+}
+
+.app-google a {
+    font-size: 35px;
+    padding: 0 20px 0 0;
+}
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+
+/***********************Footer************/
+
+.footer-top {
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 50px 0;
+    color: blackS;
+    font-weight: bold;
+}
